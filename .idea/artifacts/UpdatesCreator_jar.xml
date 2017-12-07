@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="UpdatesCreator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UpdatesCreator_jar</output-path>
+    <root id="archive" name="UpdatesCreator.jar">
+      <element id="module-output" name="UpdatesCreator" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-cli-1.4/commons-cli-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-io-2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-net-3.6/commons-net-3.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
