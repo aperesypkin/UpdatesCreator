@@ -3,9 +3,9 @@
     <output-path>$PROJECT_DIR$/out/artifacts/UpdatesCreator_jar</output-path>
     <root id="archive" name="UpdatesCreator.jar">
       <element id="module-output" name="UpdatesCreator" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-cli-1.4/commons-cli-1.4.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-io-2.6/commons-io-2.6.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../commons-net-3.6/commons-net-3.6.jar" path-in-jar="/" />
+      <element id="library" level="project" name="commons-cli-1.4" />
+      <element id="library" level="project" name="commons-io-2.6" />
+      <element id="library" level="project" name="commons-net-3.6" />
     </root>
   </artifact>
 </component>
