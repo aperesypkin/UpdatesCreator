@@ -11,7 +11,18 @@ import java.io.File;
 public class BuildChecker {
 
     public static void check(String path, String[] fromBuilds, String toBuild, FTPNetworkManager ftp, String ftpPath) {
-        Log.println("Начинаем проверку наличия билдов в " + new File(path).getPath());
+
+        File buildsStoragePath = new File(path);
+
+        if (!buildsStoragePath.exists()) {
+            if (buildsStoragePath.mkdirs()) {
+                Log.println("Создаем директорию " + buildsStoragePath.getPath());
+            } else {
+                Log.println("Ошибка при создании " + buildsStoragePath.getPath());
+            }
+        }
+
+        Log.println("Начинаем проверку наличия билдов в " + buildsStoragePath.getPath());
 
         boolean isBuildsReady = true;
 
