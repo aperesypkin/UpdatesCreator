@@ -11,7 +11,7 @@ import java.io.File;
 public class BuildChecker {
 
     public static void check(String path, String[] fromBuilds, String toBuild, FTPNetworkManager ftp, String ftpPath) {
-        Log.println("Начинаем проверку наличия билдов в " + path);
+        Log.println("Начинаем проверку наличия билдов в " + new File(path).getPath());
 
         boolean isBuildsReady = true;
 

@@ -14,12 +14,14 @@ public class FTPNetworkManager {
     private String server;
     private String user;
     private String password;
+    private String ftpPath;
     private boolean isFTP;
 
-    public FTPNetworkManager(String server, String user, String password, boolean isFTP) {
+    public FTPNetworkManager(String server, String user, String password, String ftpPath, boolean isFTP) {
         this.server = server;
         this.user = user;
         this.password = password;
+        this.ftpPath = ftpPath;
         this.isFTP = isFTP;
     }
 
@@ -38,7 +40,7 @@ public class FTPNetworkManager {
                 // use local passive mode to pass firewall
                 ftpClient.enterLocalPassiveMode();
 
-                boolean result = FTPNetworkManager.downloadDirectory(ftpClient, remoteDirPath, "", saveDirPath, build);
+                boolean result = FTPNetworkManager.downloadDirectory(ftpClient, remoteDirPath, "", saveDirPath, build, ftpPath);
 
                 // log out and disconnect from the server
                 ftpClient.logout();
@@ -60,7 +62,7 @@ public class FTPNetworkManager {
     }
 
     private static boolean downloadDirectory(FTPClient ftpClient, String parentDir,
-                                         String currentDir, String saveDir, String build) throws IOException {
+                                         String currentDir, String saveDir, String build, String ftpPath) throws IOException {
         String dirToList = parentDir;
         if (!currentDir.equals("")) {
             dirToList += "/" + currentDir;
@@ -81,7 +83,7 @@ public class FTPNetworkManager {
                 }
 
                 String buildFolder = build.substring(0, 4);
-                String newParentDir = parentDir.replace("/BFT/!filials/!info/azk2/" + buildFolder + "/", "");
+                String newParentDir = parentDir.replace(ftpPath + buildFolder + "/", "");
 
                 String newDirPath = saveDir + newParentDir + File.separator + currentDir + File.separator + currentFileName;
                 if (currentDir.equals("")) {
@@ -98,7 +100,7 @@ public class FTPNetworkManager {
                     }
 
                     // download the sub directory
-                    downloadDirectory(ftpClient, dirToList, currentFileName, saveDir, build);
+                    downloadDirectory(ftpClient, dirToList, currentFileName, saveDir, build, ftpPath);
                 } else {
                     // download the file
                     boolean success = downloadSingleFile(ftpClient, filePath, newDirPath);

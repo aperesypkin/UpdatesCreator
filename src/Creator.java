@@ -35,7 +35,7 @@ public class Creator {
 
         Log.println("UpdatesCreator started\n");
 
-        FTPNetworkManager ftp = new FTPNetworkManager(ftpServer, ftpUser, ftpPassword, isFTP);
+        FTPNetworkManager ftp = new FTPNetworkManager(ftpServer, ftpUser, ftpPassword, ftpPath, isFTP);
 
         BuildChecker.check(fromPath, fromBuilds, toBuild, ftp, ftpPath);
 

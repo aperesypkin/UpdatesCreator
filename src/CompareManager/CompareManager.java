@@ -251,7 +251,7 @@ public class CompareManager {
         buildFrom.find();
         buildTO.find();
         if (!new File(UPDATE_DIR + "\\Builds\\").exists()) {
-            Log.println("Создаем директорию " + UPDATE_DIR + "\\Builds\\");
+            Log.println("Создаем директорию " + new File(UPDATE_DIR + "\\Builds\\").getPath());
             new File(UPDATE_DIR + "\\Builds\\").mkdirs();
         }
         String pathWithPrefix[] = {UPDATE_DIR + "\\Builds\\" + buildFrom.group().toString(), UPDATE_DIR + "\\Builds\\" + buildTO.group().toString()};
@@ -265,10 +265,10 @@ public class CompareManager {
                 String pathToServer = pathToBuild[j] + "\\server.zip";
                 String pathToClient = pathToBuild[j] + "\\client.zip";
                 try {
-                    Log.println("Распаковываем " + pathToServer + " в " + pathWithPrefix[j]);
+                    Log.println("Распаковываем " + new File(pathToServer).getPath() + " в " + new File(pathWithPrefix[j]).getPath());
                     UtilsZIP.unpack(pathToServer, pathWithPrefix[j]);
 
-                    Log.println("Распаковываем " + pathToClient + " в " + pathWithPrefix[j] + "\\client");
+                    Log.println("Распаковываем " + new File(pathToClient).getPath() + " в " + new File(pathWithPrefix[j] + "\\client").getPath());
                     UtilsZIP.unpack(pathToClient, pathWithPrefix[j] + "\\client");
                 } catch (IOException e) {
                     e.printStackTrace();
