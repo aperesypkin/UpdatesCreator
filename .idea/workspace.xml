@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d2e6c7-3815-4c67-8261-7d6181f59765" name="Default" comment="" />
+    <list default="true" id="a2d2e6c7-3815-4c67-8261-7d6181f59765" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" afterPath="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +23,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BuildChecker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Creator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Creator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatchMaker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PatchMaker/PatchMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildChecker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BuildChecker/BuildChecker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -117,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/BuilChecker/BuildChecker.java" />
         <option value="$PROJECT_DIR$/src/Parser/ArgsParser.java" />
         <option value="$PROJECT_DIR$/src/Archiver/Archiver.java" />
-        <option value="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" />
         <option value="$PROJECT_DIR$/src/CompareManager/FillDelta.java" />
         <option value="$PROJECT_DIR$/src/Helpers/OptionsBuilder.java" />
         <option value="$PROJECT_DIR$/UpdatesCreator.iml" />
@@ -125,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/NetworkManagers/FTPNetworkManager.java" />
         <option value="$PROJECT_DIR$/src/CompareManager/CompareManager.java" />
         <option value="$PROJECT_DIR$/src/BuildChecker/BuildChecker.java" />
+        <option value="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" />
       </list>
     </option>
   </component>
@@ -689,12 +711,12 @@
       <workItem from="1513953485680" duration="140000" />
       <workItem from="1516609553030" duration="45000" />
       <workItem from="1516693820733" duration="1558000" />
-      <workItem from="1516695707638" duration="329000" />
+      <workItem from="1516695707638" duration="1239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107481000" />
+    <option name="totallyTimeSpent" value="108391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -777,6 +799,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -815,6 +838,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -998,13 +1022,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetworkManagers/NetworkManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/PatchMaker/PatchMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UpdatesCreator.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1036,14 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Creator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" column="24" lean-forward="false" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NetworkManagers/FTPNetworkManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="662">
@@ -1066,6 +1075,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Creator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PatchMaker/PatchMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
           <folding />
         </state>
       </provider>

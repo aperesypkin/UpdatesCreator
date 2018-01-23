@@ -50,36 +50,44 @@ public class PatchMaker {
             }
         }
 
-        File webFolder = new File(updateDir + "\\patch v." + patchBuild + "\\web_" + patchBuild);
-        Log.println("Создаем директорию " + webFolder.getPath());
-        if (!webFolder.exists()) {
-            webFolder.mkdirs();
-        } else {
-            Log.println("Директория " + webFolder.getPath() + " уже существует");
+        File azkPath = new File(buildsDir + "\\" + patchBuild + "\\azk.war");
+
+        if (azkPath.exists()) {
+            File webFolder = new File(updateDir + "\\patch v." + patchBuild + "\\web_" + patchBuild);
+            Log.println("Создаем директорию " + webFolder.getPath());
+            if (!webFolder.exists()) {
+                webFolder.mkdirs();
+            } else {
+                Log.println("Директория " + webFolder.getPath() + " уже существует");
+            }
+
+            try {
+                Log.println("Копируем " + azkPath + " в " + webFolder.getPath());
+                FileUtils.copyFileToDirectory(azkPath, webFolder);
+            } catch (IOException exception) {
+                exception.printStackTrace();
+                System.exit(1);
+            }
         }
 
-        try {
-            Log.println("Копируем " + buildsDir + "\\" + patchBuild + "\\azk.war" + " в " + webFolder.getPath());
-            FileUtils.copyFileToDirectory(new File(buildsDir + "\\" + patchBuild + "\\azk.war"), new File(webFolder.getPath()));
-        } catch (IOException exception) {
-            exception.printStackTrace();
-            System.exit(1);
-        }
+        File wsPath = new File(buildsDir + "\\" + patchBuild + "\\ws.war");
 
-        File termitFolder = new File(updateDir + "\\patch v." + patchBuild + "\\termit_" + patchBuild);
-        Log.println("Создаем директорию " + termitFolder.getPath());
-        if (!termitFolder.exists()) {
-            termitFolder.mkdirs();
-        } else {
-            Log.println("Директория " + termitFolder.getPath() + " уже существует");
-        }
+        if (wsPath.exists()) {
+            File termitFolder = new File(updateDir + "\\patch v." + patchBuild + "\\termit_" + patchBuild);
+            Log.println("Создаем директорию " + termitFolder.getPath());
+            if (!termitFolder.exists()) {
+                termitFolder.mkdirs();
+            } else {
+                Log.println("Директория " + termitFolder.getPath() + " уже существует");
+            }
 
-        try {
-            Log.println("Копируем " + buildsDir + "\\" + patchBuild + "\\ws.war" + " в " + termitFolder.getPath() + "\n");
-            FileUtils.copyFileToDirectory(new File(buildsDir + "\\" + patchBuild + "\\ws.war"), new File(termitFolder.getPath()));
-        } catch (IOException exception) {
-            exception.printStackTrace();
-            System.exit(1);
+            try {
+                Log.println("Копируем " + wsPath + " в " + termitFolder.getPath() + "\n");
+                FileUtils.copyFileToDirectory(wsPath, termitFolder);
+            } catch (IOException exception) {
+                exception.printStackTrace();
+                System.exit(1);
+            }
         }
 
         Log.println("Процедура подготовки патча завершена\n");
