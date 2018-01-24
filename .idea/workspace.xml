@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d2e6c7-3815-4c67-8261-7d6181f59765" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" afterPath="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CompareManager/CompareManager.java" afterPath="$PROJECT_DIR$/src/CompareManager/CompareManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,14 +27,14 @@
       <file leaf-file-name="Creator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Creator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="697">
               <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PatchMaker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PatchMaker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PatchMaker/PatchMaker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
@@ -56,7 +57,7 @@
       <file leaf-file-name="FTPNetworkManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NetworkManagers/FTPNetworkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
+            <state relative-caret-position="1581">
               <caret line="97" column="82" lean-forward="false" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompareManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CompareManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CompareManager/CompareManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="268" column="63" lean-forward="true" selection-start-line="268" selection-start-column="63" selection-end-line="268" selection-end-column="63" />
+            <state relative-caret-position="288">
+              <caret line="261" column="81" lean-forward="false" selection-start-line="261" selection-start-column="81" selection-end-line="261" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -144,9 +145,9 @@
         <option value="$PROJECT_DIR$/UpdatesCreator.iml" />
         <option value="$PROJECT_DIR$/src/Creator.java" />
         <option value="$PROJECT_DIR$/src/NetworkManagers/FTPNetworkManager.java" />
-        <option value="$PROJECT_DIR$/src/CompareManager/CompareManager.java" />
         <option value="$PROJECT_DIR$/src/BuildChecker/BuildChecker.java" />
         <option value="$PROJECT_DIR$/src/PatchMaker/PatchMaker.java" />
+        <option value="$PROJECT_DIR$/src/CompareManager/CompareManager.java" />
       </list>
     </option>
   </component>
@@ -179,6 +180,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,8 +332,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,12 +712,13 @@
       <workItem from="1513953485680" duration="140000" />
       <workItem from="1516609553030" duration="45000" />
       <workItem from="1516693820733" duration="1558000" />
-      <workItem from="1516695707638" duration="1239000" />
+      <workItem from="1516695707638" duration="1679000" />
+      <workItem from="1516790289449" duration="85000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108391000" />
+    <option name="totallyTimeSpent" value="108916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -724,7 +726,6 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20718816" sideWeight="0.5027548" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,6 +739,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1055,19 +1057,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NetworkManagers/FTPNetworkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
+        <state relative-caret-position="1581">
           <caret line="97" column="82" lean-forward="false" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CompareManager/CompareManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="268" column="63" lean-forward="true" selection-start-line="268" selection-start-column="63" selection-end-line="268" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1075,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Creator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="697">
           <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
           <folding />
         </state>
@@ -1091,6 +1085,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="65" column="58" lean-forward="false" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CompareManager/CompareManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="261" column="81" lean-forward="false" selection-start-line="261" selection-start-column="81" selection-end-line="261" selection-end-column="81" />
           <folding />
         </state>
       </provider>

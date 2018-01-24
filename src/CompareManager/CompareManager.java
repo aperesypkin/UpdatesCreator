@@ -259,7 +259,7 @@ public class CompareManager {
         //Для каждого из путей pathToBuild создам структуру папок и распаковываем туда билд
         for (int j = 0; j < pathToBuild.length; j++) {
             if (!new File(pathWithPrefix[j]).exists()) {
-                Log.println("Создаем директорию " + pathWithPrefix[j]);
+                Log.println("Создаем директорию " + new File(pathWithPrefix[j]).getPath());
                 new File(pathWithPrefix[j]).mkdir();
                 new File(pathWithPrefix[j] + "\\client").mkdir();
                 String pathToServer = pathToBuild[j] + "\\server.zip";
