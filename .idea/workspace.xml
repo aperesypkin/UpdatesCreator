@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2d2e6c7-3815-4c67-8261-7d6181f59765" name="Default" comment="" />
+    <list default="true" id="a2d2e6c7-3815-4c67-8261-7d6181f59765" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/UpdatesCreator_jar/UpdatesCreator.jar" afterPath="$PROJECT_DIR$/out/artifacts/UpdatesCreator_jar/UpdatesCreator.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/UpdatesCreator/CompareManager/CompareManager.class" afterPath="$PROJECT_DIR$/out/production/UpdatesCreator/CompareManager/CompareManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -710,12 +714,12 @@
       <workItem from="1516609553030" duration="45000" />
       <workItem from="1516693820733" duration="1558000" />
       <workItem from="1516695707638" duration="1679000" />
-      <workItem from="1516790289449" duration="139000" />
+      <workItem from="1516790289449" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108970000" />
+    <option name="totallyTimeSpent" value="109043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
